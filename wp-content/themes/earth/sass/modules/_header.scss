@@ -1,0 +1,39 @@
+.site-header {
+	background: $super-light-gray;
+	@include rem(padding, 1rem 0);
+	@include rem(margin-bottom, 4rem);
+
+	.row{
+		margin-bottom:0;
+	}
+
+
+	.site-branding {
+		float: left;
+
+		.site-title {
+			@include rem(margin-bottom, 0.5rem);
+		}
+
+		.site-description {
+			margin-bottom: 0;
+		}
+		img{
+			width: 90%;
+			margin-left: 2%;
+			float: left;
+		}
+	}
+	nav {
+		float: right;
+		position: relative;
+		@include rem(top, 1.75rem);
+
+		li {
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
